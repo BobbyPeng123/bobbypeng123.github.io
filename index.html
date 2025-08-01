@@ -134,24 +134,39 @@
     </tr>
 
 
-    <!-- New paper entry without yellow highlight -->
-    <tr>
+    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <img src='images/HYPERSPECTRAL.png' width=100%>
+          <img src='images/OPENTEACH.jpg' width="160">
         </div>
+        <script type="text/javascript">
+          function cat3d_start() {
+            document.getElementById('cat3d_image').style.opacity = "1";
+          }
+
+          function cat3d_stop() {
+            document.getElementById('cat3d_image').style.opacity = "0";
+          }
+          cat3d_stop()
+        </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <span class="papertitle">Hyperspectral Image&nbsp;Recovery Constrained by&nbsp;Multi‑Granularity&nbsp;Non‑Local&nbsp;Self‑Similarity&nbsp;Priors</span>
+        <a href="https://open-teach.github.io/">
+    			<span class="papertitle">Hyperspectral Image Recovery Constrained by Multi‑Granularity Non‑Local Self‑Similarity Priors
+</span>
+        </a>
         <br>
         <strong>Zhuoran Peng</strong>, Yiqing Shen
+
         <br>
-        <em>Under Review</em>
+        <em>Under Review, 2025
+        <br>
+        <a href="https://open-teach.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2403.07870">arXiv</a>
         <p></p>
         <p>
-          <!-- Links to website and paper will be added once available -->
-        </p>
-      </td>
+    				Use the Multi‑Granularity Non‑Local Self‑Similarity (MG‑NSS) prior for hyperspectral image (HSI) recovery, unifying coarse‑grained Tucker and fine‑grained FCTN decompositions to jointly capture global, local and non‑local cues
     </tr>
 
 
